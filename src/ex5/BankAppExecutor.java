@@ -8,7 +8,7 @@ import java.util.logging.Logger;
 
 public class BankAppExecutor
 {
-  private static int NUMBER_OF_THREADS = 3;
+  private static int NUMBER_OF_THREADS = 10;
   
   private static void executeTransactions()
   {

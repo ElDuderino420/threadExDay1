@@ -6,7 +6,7 @@ import java.awt.*;
 /**
  * @author Lars Mortensen
  */
-class Ball {
+class Ball extends Thread{
 
   private final int SLEEP_TIME = 30;
   Color color;
@@ -59,7 +59,7 @@ class Ball {
     g.dispose();
   }
 
-
+  @Override
   public void run() {
     stop = false;
     while (!stop) {
