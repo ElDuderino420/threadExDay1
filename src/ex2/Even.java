@@ -13,8 +13,10 @@ public class Even {
     private int n = 0;
     
     public int next(){
-        n++;
-        n++;
+        int a = n;
+        a++;
+        a++;
+        n = a;
         return n;
     }
 }

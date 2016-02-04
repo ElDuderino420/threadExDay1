@@ -5,6 +5,9 @@
  */
 package ex2;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  *
  * @author David
@@ -14,11 +17,16 @@ public class ex2 {
     public static void main(String[] args) {
         Even Even = new Even();
         
-        T1 t1 = new T1(Even);
-        T1 t2 = new T1(Even);
+        List<T1> l = new ArrayList();
         
-        t1.start();
-        t2.start();
+        for (int i = 0; i < 100; i++) {
+            l.add(new T1(Even));
+        }
+        
+        for (T1 l1 : l) {
+            l1.start();
+        }
+        
         
 //        Counter count = new Counter();
 //        
